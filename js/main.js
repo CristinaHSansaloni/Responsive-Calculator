@@ -1,6 +1,12 @@
 'use strict'
 
-let outputScreen = document.querySelector('.output_screen');
+const outputScreen = document.querySelector('.output_screen');
+const switchBtn = document.querySelector('.switch_dark');
+
+switchBtn.addEventListener('click',()=> {
+    document.body.classList.toggle('dark');
+    switchBtn.classList.toggle('active');
+})
 
 function display(num) {
     outputScreen.value += num;

@@ -5,33 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <div class="container">
+      <button class="switch active switch_dark">
+        <span><box-icon name="moon" color="white"></box-icon></span>
+        <span><box-icon name="sun" color="white"></box-icon>></span>
+      </button>
       <div class="calculator">
         <input type="text" placeholder="0" class="output output_screen" />
-        <button onclick="Clear()">C</button>
-        <button onclick="del()">DEL</button>
-        <button onclick="display('%')">%</button>
-        <button onclick="display('/')">/</button>
-        <button onclick="display('7')">7</button>
-        <button onclick="display('8')">8</button>
-        <button onclick="display('9')">9</button>
-        <button onclick="display('*')">*</button>
-        <button onclick="display('4')">4</button>
-        <button onclick="display('5')">5</button>
-        <button onclick="display('6')">6</button>
-        <button onclick="display('-')">-</button>
-        <button onclick="display('1')">1</button>
-        <button onclick="display('2')">2</button>
-        <button onclick="display('3')">3</button>
-        <button onclick="display('+')">+</button>
-        <button onclick="display('.')">.</button>
-        <button onclick="display('0')">0</button>
-        <button onclick="Calculate()" class="equal">=</button>
+        <button class="btn" onclick="Clear()">C</button>
+        <button class="btn" onclick="del()">DEL</button>
+        <button class="btn" onclick="display('%')">%</button>
+        <button class="btn" onclick="display('/')">/</button>
+        <button class="btn" onclick="display('7')">7</button>
+        <button class="btn" onclick="display('8')">8</button>
+        <button class="btn" onclick="display('9')">9</button>
+        <button class="btn" onclick="display('*')">*</button>
+        <button class="btn" onclick="display('4')">4</button>
+        <button class="btn" onclick="display('5')">5</button>
+        <button class="btn" onclick="display('6')">6</button>
+        <button class="btn" onclick="display('-')">-</button>
+        <button class="btn" onclick="display('1')">1</button>
+        <button class="btn" onclick="display('2')">2</button>
+        <button class="btn" onclick="display('3')">3</button>
+        <button class="btn" onclick="display('+')">+</button>
+        <button class="btn" onclick="display('.')">.</button>
+        <button class="btn" onclick="display('0')">0</button>
+        <button onclick="Calculate()" class="btn equal">=</button>
       </div>
     </div>
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
